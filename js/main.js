@@ -155,3 +155,34 @@ resuemeButton.addEventListener('click' , () => {
 })
 
 
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Start  scroll reveal ... 
+
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px' ,
+    duration: 2500,
+    delay: 400
+    // reset: true /* Animations repeat */
+    })
+  
+  sr.reveal('l-header, .nav__menu, .home,.social,.profile, .education,.skills,.experience,.certification,.references,.languages,.interests,.scrolltop');
+  sr.reveal('l-header, .nav__menu, .home,.social,.profile', {delay:600,origin:'bottom', interval: 100});
+  sr.reveal('.education,.skills',{origin:'left'});
+  sr.reveal('.experience,.certification)',{origin:'left'});
+  sr.reveal('.references,.languages', {interval:100});
+  sr.reveal('.interests,.scrolltop', {delay:600,origin:'top', interval: 200});
+  
+  
+
+
+
+
+// End    scroll reveal ... 
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
